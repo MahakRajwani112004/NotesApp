@@ -1,0 +1,61 @@
+*body {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 12px; /* Slightly more rounded corners */
+    overflow: hidden;
+    text-align: center;
+    width: 350px; /* Increased width */
+    margin: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Heavier shadow */
+    padding: 20px; /* Added padding for spacing */
+    background-color: #fff; /* White background for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.cardImage {
+    width: 300px;
+    height: 200px; /* Adjusted height for better proportion */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.cardTitle {
+    font-size: 24px;
+    font-weight: 700; /* Slightly bolder title */
+    margin-bottom: 15px;
+    font-family: "Ubuntu", sans-serif;
+    color: #333; /* Darker color for better readability */
+}
+
+.cardButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.cardButton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.cardButton.secondary {
+    background-color: #6c757d; /* Secondary button color */
+}
+
+.cardButton.secondary:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+}

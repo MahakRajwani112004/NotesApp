@@ -1,0 +1,78 @@
+*body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif; /* Applied font to body for consistency */
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Rounded corners for a softer look */
+    overflow: hidden;
+    text-align: center;
+    width: 400px;
+    margin: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Heavier shadow for depth */
+    background-color: #fff; /* White background for clarity */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.cardImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    display: block;
+    margin-bottom: 15px; /* Space between image and title */
+}
+.cardTitle {
+    font-size: 24px; /* Ensure font size is large enough */
+    font-weight: 700; /* Bold for emphasis */
+    margin: 15px 0; /* Consistent spacing */
+    color: #333; /* Dark text for readability */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%); /* Gradient with better contrast */
+    -webkit-background-clip: text; /* Gradient text effect */
+    -webkit-text-fill-color: transparent; /* Make text fill transparent to show gradient */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adding text shadow for better readability */
+}
+
+
+.cardButton {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 10px 5px; /* Space around buttons */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cardButton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.cardButton.secondary {
+    background-color: #6c757d; /* Secondary button color */
+}
+
+.cardButton.secondary:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 30px; /* Space between cards */
+    justify-content: center; /* Center the grid within the container */
+    padding: 20px; /* Padding around the grid */
+}

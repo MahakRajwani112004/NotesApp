@@ -1,0 +1,51 @@
+*body{
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.cardTitle {
+    font-size: 22px;
+    font-weight: 900;
+    margin: 10px 0;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+
+.cardLink {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.cardLink:hover {
+    text-decoration: underline;
+}
+
+/* Grid container for the cards */
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the grid within the container */
+    width: 100%; /* Ensure the grid takes full width */
+    margin: 0 auto; /* Center the grid on the page */
+    padding: 20px; /* Add padding around the grid */
+    box-sizing: border-box; /* Ensure padding doesn’t affect grid width */
+}

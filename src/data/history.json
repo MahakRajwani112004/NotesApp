@@ -1,0 +1,19 @@
+[
+  {
+    "role": "Frontend Developer",
+    "organisation": "IONAGE",
+    "startDate": "Feburary, 2024",
+    "endDate": "Present",
+    "experiences": ["Worked on Webflow", "Created New Pages and Update the existing one"],
+    "imageSrc": "history/ionage.png"
+  },
+  {
+    "role": "Web Developer Intern",
+    "organisation": "IdentityPro",
+    "startDate": "Aug, 2023",
+    "endDate": "Jan, 2024",
+    "experiences": ["Worked on real-life projects", "Designed the Admin panel ,"],
+    "imageSrc": "history/identitypro_.jpeg"
+  }
+
+]
